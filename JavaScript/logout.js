@@ -8,7 +8,7 @@
 			// elimino la variable nomUsr
 			sessionStorage.removeItem("nomUsr");
 			// cargar la pagina de login ...
-            window.open("Logout.html","_self");
+            window.open("Logout.html");
 
 		}
 
