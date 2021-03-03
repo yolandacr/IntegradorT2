@@ -3,8 +3,8 @@
 
 <!--
 HTML
-web o pagina:
-autor: Carlos Boni
+web o pagina: Trabajo segundo trimestre
+autor: Yolanda Cordero
 fecha: Marzo 2021
 -->
 
@@ -34,24 +34,30 @@ fecha: Marzo 2021
 		  padding: 0;
 		  margin: 0;
 		}
-		
-		.marco {
-		  display: grid;
-		  border-style: solid;
-		  border-color: red;
-		  grid-template-columns: 250px auto;
-		  grid-template-rows: 150px 40px auto 40px;
-		  grid-gap: 10px;
-		  width: 100vw;
-		  height: 100vh;
-		}
-		
-		.encabezado {
-		  border-style: solid;
-		  border-color: blue;
-		  grid-column: 1 / span 2;
-		  grid-row: 1 / span 1;
-		}
+
+        .marco {
+            display: grid;
+            border-style: solid;
+            border-color: red;
+            grid-template-columns: 250px auto;
+            grid-template-rows: 150px 40px auto 40px;
+            grid-gap: 10px;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('../img/fondo_web.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .encabezado {
+            border-style: solid;
+            border-color: blue;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 1;
+            background-color: rgba(255, 255, 255, .4);
+            border: 1px hidden #526079;
+            border-radius: 20px;
+        }
 		
 		.migas {
 		  border-style: solid;
@@ -81,15 +87,18 @@ fecha: Marzo 2021
 		  grid-row: 4 / span 1;
 		}
 
-        
+		nav{
+			margin:1.5%;
+		}
 
         nav a {
             text-decoration: none;
             color: inherit;
-            font-size: 2vw;
+            font-size: 1.5vw;
         }
 
         nav li {
+			
             height: auto;
             display: inline-block;
             background-color: cornflowerblue;
@@ -104,20 +113,26 @@ fecha: Marzo 2021
             }
 
         .contador{
-			font-size:2vw;
+			font-size:1.5vw;
 			float:right;
+			margin:2%;
+			color:white;
         }
 
         .menuLateral {
 			display:grid;
 			grid-template-columns:1fr;
-			grid-template-rows:14vh 14vh 14vh 14vh 14vh;
-			background-color:cornflowerblue;
-			color:white;
-			font-size:2vw;
-			text-align:center;
+			grid-template-rows:9vh 9vh 9vh 9vh 9vh;
+			align-items:center;
+			
 
         }
+
+		#enlaces{
+			padding:5%;
+		}
+
+        
 
        
        
@@ -134,29 +149,32 @@ fecha: Marzo 2021
 
 	<div class="marco">
 		<div class="encabezado">
-			<div class="contador" id="cuentavisitas"></div>
 			
-			<nav>
-				<ul>
-					<li><a  href="C:\1DAW\TRIMESTRE 2\TRABAJO CARLOS TRIMESTRE 2\indexT2.html" target="_blank">Inicio</a="nav"></li>
-					<li><a  href= "#">Actualidad</a></li>
-					<li><a  href= "#">Blog</a></li>
-					<li><a  href= "#">Tendencias</a></li>
-					<li><a  href= "#">Contactar</a></li>
-				</ul>
-			</nav>
+		<div class="contador" id="cuentavisitas"></div>
+
+	<nav>
+		<ul>
+			<li><a  href="C:\Users\reena\Desktop\TRABAJO CARLOS TRIMESTRE 2\IntegradorT2\index.html" target="_blank">Inicio</a="nav"></li>
+			<li><a  href= "#">Actualidad</a></li>
+			<li><a  href= "#">Blog</a></li>
+			<li><a  href= "#">Tendencias</a></li>
+			<li><a  href= "#">Contactar</a></li>
+		</ul>
+	</nav>
 
 
 		</div>
 		<div class="migas">Migas de pan (ruta)</div>
 		<div class="lado">
-			<div class="menuLateral">
-				<div>Inicio</div>
-				<div>Actualidad</div>
-				<div>Blog</div>
-				<div>Tendencias</div>
-				<div>Contactar</div>
-			</div>
+			<nav>
+				<ul class="menuLateral">
+					<li id="enlaces"><a href="C:\Users\reena\Desktop\TRABAJO CARLOS TRIMESTRE 2\IntegradorT2\index.html" target="_blank">Inicio</a></li>
+					<li id="enlaces"><a href="#">Actualidad</a></li>
+					<li id="enlaces"><a href="#">Blog</a></li>
+					<li id="enlaces"><a href="#">Tendencias</a></li>
+					<li id="enlaces"><a href="#">Contactar</a></li>
+				</ul>
+			</nav>
 		</div>
 		<div class="contenido">Contenido</div>
 		<div class="pie">Pie de página</div>
