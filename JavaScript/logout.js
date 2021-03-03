@@ -8,7 +8,7 @@
 			// elimino la variable nomUsr
 			sessionStorage.removeItem("nomUsr");
 			// cargar la pagina de login ...
-            location.href="index.html";
+            window.open("Logout.html","_self");
 
 		}
 
