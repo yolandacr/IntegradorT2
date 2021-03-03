@@ -6,4 +6,3 @@
 			// carga la pagina de logout...
 			window.open("Logout.html");
 		}
-
