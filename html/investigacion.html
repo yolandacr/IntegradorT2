@@ -119,18 +119,35 @@ fecha: Marzo 2021
 			color:white;
         }
 
-        .menuLateral {
-			display:grid;
-			grid-template-columns:1fr;
-			grid-template-rows:9vh 9vh 9vh 9vh 9vh;
-			align-items:center;
-			
-
+        #enlaces {
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2vh 2vh 2vh 2vh 2vh;
+            box-sizing: border-box;
+            background-color: cornflowerblue;
+            margin: 1%;
+            border: 1px solid #000;
+           
         }
 
-		#enlaces{
-			padding:5%;
-		}
+        #lateralA {
+			text-align:center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5vw;
+			padding-top:10%;
+			
+        }
+
+
+
+
+
+            #lateralA:hover {
+                color: black;
+            }
+
 
         
 
@@ -166,15 +183,15 @@ fecha: Marzo 2021
 		</div>
 		<div class="migas">Migas de pan (ruta)</div>
 		<div class="lado">
-			<nav>
-				<ul class="menuLateral">
-					<li id="enlaces"><a href="C:\Users\reena\Desktop\TRABAJO CARLOS TRIMESTRE 2\IntegradorT2\index.html" target="_blank">Inicio</a></li>
-					<li id="enlaces"><a href="#">Actualidad</a></li>
-					<li id="enlaces"><a href="#">Blog</a></li>
-					<li id="enlaces"><a href="#">Tendencias</a></li>
-					<li id="enlaces"><a href="#">Contactar</a></li>
+			
+				<ul>
+					<li id="enlaces"><a id="lateralA" href="C:\Users\reena\Desktop\TRABAJO CARLOS TRIMESTRE 2\IntegradorT2\index.html" target="_blank">Inicio</a></li>
+					<li id="enlaces"><a id="lateralA" href="#">Actualidad</a></li>
+					<li id="enlaces"><a id="lateralA" href="#">Blog</a></li>
+					<li id="enlaces"><a id="lateralA" href="#">Tendencias</a></li>
+					<li id="enlaces"><a id="lateralA" href="#">Contactar</a></li>
 				</ul>
-			</nav>
+			
 		</div>
 		<div class="contenido">Contenido</div>
 		<div class="pie">Pie de página</div>
