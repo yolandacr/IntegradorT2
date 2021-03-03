@@ -17,7 +17,7 @@ body {
 }
 
 .fotoFondo {
-    background-image: url('./img/fondo_web.jpg');
+    background-image: url(../img/fondo_web.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     
