@@ -1,28 +1,30 @@
 ﻿/*Características de todo el cuerpo*/
 {
     box-sizing: border-box;
-    margin:0%;
-    padding:0%;
+    margin:0;
+    padding:0;
 }
 
 /*Cuerpo de la web*/
 
 body {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1vw;
-    overflow: scroll;
-}
-
-.fotoFondo {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background-image: url(../img/fondo_web.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    
+    background-size: cover;
+    height: auto;
 }
 
+/*.fotoFondo {
+    background-image: url(../img/fondo_web.jpg);
+    background-size:cover;
+    height:auto;
+}
+*/
 /*COMIENZO ENCABEZADO*/
 
 .Encabezado {
@@ -86,7 +88,7 @@ body {
 nav {
     overflow: hidden;
     width: 100vw;
-    height: 10vh;
+    height: auto;
     font-size: 1vw;
 }
 
@@ -95,8 +97,6 @@ nav {
         color: inherit;
         font-size: 1vw;
     }
-
-
 
     nav li {
         display: inline-block;
@@ -115,10 +115,7 @@ nav {
         font-size: 1vw;
     }
 
-    /*Menudrowdown*/
-
-
-
+    /*Menu desplegable*/
 .menuDesplegable-contenido {
     display: none;
     position: absolute;
@@ -153,41 +150,8 @@ nav {
     left: 3px;
 }
 
-
-
-
     /*ASIDE*/
-.Formulario {
-    border: 5% solid #526079;
-    border-radius: 2%;
-    background-color: rgba(255, 255, 255, .5);
-    text-align: center;
-    font-size: 1vw;
-    float:right;
-    resize:both;
-    box-sizing:border-box;
-    width:100%;
-    height:auto;
-    
-}
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-}
 
-#Lateral {
-    width: 12vw;
-    padding: 10px;
-    height: 40vh;
-    font-size: 1vw;
-    margin-top:10%;
-    margin-right:2%;
-    
-}
 
     /*BLOQUE PRINCIPAL*/
 
@@ -252,7 +216,6 @@ input[type=text], select, textarea {
     text-align: left;
     font-size: 0.9vw;
     width: 40%;
-    
 }
 
 #art2 {
@@ -260,19 +223,11 @@ input[type=text], select, textarea {
     width: 40%;
     font-size: 0.9vw;
     margin-left: 100px;
-    
 }
-
-
-
 
     /*FOOTER*/
 #footer {
     font-size: 1vw;
-    height:auto;
-    margin: 5%;
     color: #223E72;
-    background-color:white;
+    height: auto;
 }
-
-
