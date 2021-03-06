@@ -13,6 +13,7 @@
 		height: 100vh;
 		background-image: url('../img/fondo_web.jpg');
 		background-size: cover;
+		background:no-repeat;
 	}
 
 	.encabezado {
