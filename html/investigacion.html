@@ -43,9 +43,7 @@ fecha: Marzo 2021
 
 
 	</div>
-	<div class="migas">
-		<div class="ParrafoCentrado" id="Actualidad"></div>
-	</div>
+	<div class="migas">Migas de pan (ruta)</div>
 	<div class="lado">
 
 		<ul>
@@ -58,52 +56,23 @@ fecha: Marzo 2021
 
 	</div>
 	<div class="contenido">
-		<p id="parrafoPrimero">
-			Es un hecho que cualquier acción que llevemos a cabo den Internet deja un rastro y es cada vez menos privada
-			(si es que alguna vez lo fue) existen servicios de vpn para "disfrazar" nuestra ip pública pero, en un sector
-			que vive en plena actualización como es el tecnológico, no es de extrañar que cad apoco tiempo surjan formas,
-			mediante el uso tecnológico, de recavar información de vital importancia para las empresas, de dudosa legalidad.
-		</p>
-		<br />
-		<div>
-			<img id="imagenActualidad" src="..\img\actualidad1.jpg"
-				 alt="Correo electrónico" />
-		</div>
 		<p id="parrafosContenido">
-			Hay información como el número de veces que se abre un email que para el usuario puede resultar irrelevante.
-			Pero el tema de los píxeles espía adquiere otra "tonalidad" cuando mediante tu ip pueden saber tu ubicación
-			física aproximada en cada momento.
-		</p>
-		<br />
-
-		<p id="parrafosContenido">
-			Tal manera de obtención de información es explotada por la gran mayoría de empresas debido a que adquieren
-			información de los usuarios de manera "gratuíta". Pagan a una persona o grupo de personas para que diseñen
-			y programen el píxel espía pero, teniendo en cuenta las grandes cantidades de información que pueden conseguir
-			con él, les sale bastante económico.
-		</p><br />
-		
-		<div>
-			<img id="imagenActualidad2" src="..\img\actualidad2.jpg"
-				 alt="píxel espía" />
-		</div>
-
-
-		<p id="parrafosContenido">
-			<br />
-			<br />
-			Teniendo en cuenta, que toda empresa se crea para obtener unos beneficios y quiere crear una serie de necesidades
-			en la gente, para luego proporcionarles ellos mismos la satifacción de las mismas, una de las formasmás comúnes en
-			el pasado era realizar encuestas de satisfacción o sorteos a cambio de tal información. Lógicamente ahora se
-			ahorran este punto.
-		</p><br />
-
-		<p id="parrafosContenido">
-			Ahora cada vez que abramos un coreeo electrónico tendremos este puntos en cuenta. Sabiendo que detrás de
-			cualquier mini-gif o jpg puede haber algo que esté pasando nuestros datos a cualquier empresa en el mundo.
-			A algunos tal hecho les inquietará, yo personalmente no consideró que mis hábitos a la hora de navegar por
-			Internet sean tan interesantes y mis preocupaciones, dados los tiempos actuales, son otras.
-
+			Contenido:<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
+			Este texto es de prueba para probar el overflow y la apariencia del contenido. En su lugar irá el correspondiente documento.<br />
 		</p>
 	</div>
 
@@ -117,7 +86,18 @@ fecha: Marzo 2021
 	</div>
 </div>
 
-<script src="..\JavaScript\investigacion.js"></script>
+<script>
+	yu = function (id) { return document.getElementById(id); }
+	if (sessionStorage) {
+		if (sessionStorage['visitas'] == undefined) {
+			sessionStorage['visitas'] = 0;
+		} var n = parseInt(sessionStorage['visitas']); sessionStorage['visitas'] = 1 + n;
+		var num = sessionStorage['visitas'];
+
+		var mensaje = "Hasta ahora has visitado mi pagina " + num + " Veces";
+
+		yu('cuentavisitas').innerHTML = mensaje;
+	}</script>
 
 </body>
 </html>
