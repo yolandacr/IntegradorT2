@@ -6,6 +6,8 @@
 
 	.marco {
 		display: grid;
+		border-style: solid;
+		border-color: red;
 		grid-template-columns: 250px auto;
 		grid-template-rows: 150px 40px auto 40px;
 		grid-gap: 10px;
@@ -16,6 +18,8 @@
 	}
 
 	.encabezado {
+		border-style: solid;
+		border-color: blue;
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 1;
 		background-color: rgba(255, 255, 255, .4);
@@ -25,27 +29,29 @@
 	
 	.migas {
 	  border-style: solid;
-	  border-top-color:cadetblue;
-	  border-bottom-color: cadetblue;
-	  border-left-color:transparent;
-	  border-right-color:transparent;
+	  border-color: yellow;
 	  grid-column: 1 / span 2;
 	  grid-row: 2 / span 1;
 	}
 	
 	.lado {
+	  border-style: solid;
+	  border-color: violet;
 	  grid-column: 1 / span 1;
 	  grid-row: 3 / span 1;
 	}
 
 .contenido {
+	border-style: solid;
+	border-color: violet;
 	grid-column: 2 / span 1;
 	grid-row: 3 / span 1;
-	overflow: auto;
-	background-color: rgba(255, 255, 255, .4);
+	overflow:auto;
 }
 	
 	.pie {
+	  border-style: solid;
+	  border-color: aqua;
 	  grid-column: 1 / span 2;
 	  grid-row: 4 / span 1;
 	}
@@ -119,38 +125,7 @@
 		color: #223E72;
 		height:auto;
 	}
-	#parrafoPrimero{
-		padding:1%;
-		font-size:1.3vw;
-		text-align:left;
+
+	#parrafosContenido{
+		font-size:2vw;
 	}
-#parrafosContenido {
-	font-size: 1.3vw;
-	padding-left: 1%;
-	text-align: left;
-}
-
-	#imagenActualidad{
-		float:right;
-		height:auto;
-		width:40%;
-		margin-top:-1.5%;
-		margin-right:3%;
-		margin-left:1%;
-	}
-
-#imagenActualidad2 {
-	float: left;
-	height: auto;
-	width: 40%;
-	margin-left:1%;
-	margin-right:1%;
-	margin-top:3%;
-	box-sizing:border-box;
-}
-
-#Actualidad{
-	color:white;
-	font-size:1.5vw;
-}
-
