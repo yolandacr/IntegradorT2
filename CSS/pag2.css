@@ -154,3 +154,10 @@
 	font-size:1.5vw;
 }
 
+.videoCentrado {
+	align-content: center;
+	margin-top: 5.5%;
+	width:560px;
+	height:315px;
+}
+
